@@ -24,3 +24,34 @@ D:\Univalle\Prog Web III\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\re
 D:\Univalle\Prog Web III\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.pdb
 D:\Univalle\Prog Web III\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.genruntimeconfig.cache
 D:\Univalle\Prog Web III\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ref\ModuleEmployeeMVC.dll
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\appsettings.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.staticwebassets.runtime.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.exe
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.deps.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.runtimeconfig.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.dll
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\bin\Debug\net6.0\ModuleEmployeeMVC.pdb
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.csproj.AssemblyReference.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.AssemblyInfoInputs.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.AssemblyInfo.cs
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.csproj.CoreCompileInputs.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.RazorAssemblyInfo.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.RazorAssemblyInfo.cs
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets\msbuild.ModuleEmployeeMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets\msbuild.build.ModuleEmployeeMVC.props
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ModuleEmployeeMVC.props
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ModuleEmployeeMVC.props
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\scopedcss\bundle\ModuleEmployeeMVC.styles.css
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\scopedcss\projectbundle\ModuleEmployeeMVC.bundle.scp.css
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.dll
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\refint\ModuleEmployeeMVC.dll
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.pdb
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ModuleEmployeeMVC.genruntimeconfig.cache
+C:\Users\lenny\Desktop\ProyectoFinalWebIII\ModuleEmployeeMVC\ModuleEmployeeMVC\obj\Debug\net6.0\ref\ModuleEmployeeMVC.dll
