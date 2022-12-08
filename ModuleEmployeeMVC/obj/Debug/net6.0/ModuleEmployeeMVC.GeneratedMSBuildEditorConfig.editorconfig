@@ -15,12 +15,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Univalle\Prog Web III\ModuleEmployeeMVC\ModuleEmployeeMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employee/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employee/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Univalle/Prog Web III/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Home/Index.cshtml]

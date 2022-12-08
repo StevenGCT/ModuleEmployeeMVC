@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using ModuleEmployeeMVC.Context;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AplicationDBContext>(options => options.UseSqlServer
+(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
