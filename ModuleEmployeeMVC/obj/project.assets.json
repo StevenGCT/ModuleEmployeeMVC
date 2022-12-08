@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lenny\\.nuget\\packages\\": {}
+    "C:\\Users\\lover\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
+      "projectUniqueName": "C:\\Users\\lover\\Documents\\GitHub\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
       "projectName": "ModuleEmployeeMVC",
-      "projectPath": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
-      "packagesPath": "C:\\Users\\lenny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\obj\\",
+      "projectPath": "C:\\Users\\lover\\Documents\\GitHub\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
+      "packagesPath": "C:\\Users\\lover\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lover\\Documents\\GitHub\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lover\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
