@@ -30,19 +30,32 @@ namespace ModuleEmployeeMVC.Controllers
         }
 
         // GET: Employees
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? type)
         {
             List<Employee> list = null;
 
-            HttpResponseMessage response = await client.GetAsync("api/Employees");
-            if (response.IsSuccessStatusCode)
+            if (!String.IsNullOrEmpty(type))
             {
-                var resultString = response.Content.ReadAsStringAsync().Result;
-                list = JsonConvert.DeserializeObject<List<Employee>>(resultString);
-                client.DefaultRequestHeaders.Clear();
-                return View(list.ToList());
+                HttpResponseMessage response2 = await client.GetAsync("api/TypeEmployee/" + type);
+                if (response2.IsSuccessStatusCode)
+                {
+                    var resultString = response2.Content.ReadAsStringAsync().Result;
+                    list = JsonConvert.DeserializeObject<List<Employee>>(resultString);
+                    client.DefaultRequestHeaders.Clear();
+                    return View(list.ToList());
+                }
             }
-
+            else
+            {
+                HttpResponseMessage response = await client.GetAsync("api/Employees");
+                if (response.IsSuccessStatusCode)
+                {
+                    var resultString = response.Content.ReadAsStringAsync().Result;
+                    list = JsonConvert.DeserializeObject<List<Employee>>(resultString);
+                    client.DefaultRequestHeaders.Clear();
+                    return View(list.ToList());
+                }
+            }
             return View(list.ToList());
         }
 

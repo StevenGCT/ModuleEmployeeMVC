@@ -10131,24 +10131,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/lovera/.nuget/packages/": {}
+    "C:\\Users\\lenny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/ModuleEmployeeMVC.csproj",
+      "projectUniqueName": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
       "projectName": "ModuleEmployeeMVC",
-      "projectPath": "/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/ModuleEmployeeMVC.csproj",
-      "packagesPath": "/Users/lovera/.nuget/packages/",
-      "outputPath": "/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/obj/",
+      "projectPath": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\ModuleEmployeeMVC.csproj",
+      "packagesPath": "C:\\Users\\lenny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lenny\\Desktop\\ProyectoFinalWebIII\\ModuleEmployeeMVC\\ModuleEmployeeMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lovera/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\lenny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10209,7 +10211,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

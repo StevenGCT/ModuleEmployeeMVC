@@ -9,6 +9,17 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Busqueda: @Html.TextBox("Type")
+        <input type="submit" value="Search" class="btn-primary"/>
+    </p>
+
+    <label>Filtrar por: </label>
+}
+
 <table class="table">
     <thead>
         <tr>
