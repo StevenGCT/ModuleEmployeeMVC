@@ -5,72 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ModuleEmployeeMVC
 build_property.RootNamespace = ModuleEmployeeMVC
-build_property.ProjectDir = C:\Users\lover\Documents\GitHub\ModuleEmployeeMVC\ModuleEmployeeMVC\
+build_property.ProjectDir = /Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lover\Documents\GitHub\ModuleEmployeeMVC\ModuleEmployeeMVC
+build_property.MSBuildProjectDirectory = /Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Pages/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEVkaXQuY3NodG1s
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRW1wbG95ZWVzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Presence/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc2VuY2VcQ3JlYXRlLmNzaHRtbA==
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Presence/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlc2VuY2UvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Presence/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc2VuY2VcSW5kZXguY3NodG1s
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Presence/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJlc2VuY2UvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lover/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-xn81uz4qxh
+[/Users/lovera/Documents/GitHub/ModuleEmployeeMVC/ModuleEmployeeMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-415pgbky6b
