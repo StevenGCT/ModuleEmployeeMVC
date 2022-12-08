@@ -173,7 +173,7 @@ namespace ModuleEmployeeMVC.Controllers
         {
             if (_context.Events == null)
             {
-                return Problem("Entity set 'DbproductsPracticaContext.Products'  is null.");
+                return Problem("Entity set 'AplicationDBContext.Events'  is null.");
             }
 
             HttpResponseMessage responde = await client.DeleteAsync($"api/Events/{id.ToString()}");
