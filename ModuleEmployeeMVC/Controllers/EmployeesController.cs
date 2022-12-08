@@ -47,6 +47,12 @@ namespace ModuleEmployeeMVC.Controllers
             return View(list.ToList());
         }
 
+        public async Task<IActionResult> GetImage(string path)
+        {
+            HttpResponseMessage response = await client.GetAsync("api/StaticFiles/img" + path);
+            return View(response);
+        }
+
         // GET: Employees/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -54,15 +60,17 @@ namespace ModuleEmployeeMVC.Controllers
             {
                 return NotFound();
             }
+            Employee e = null;
 
-            var employee = await _context.Employees
-                .FirstOrDefaultAsync(m => m.EmployeeId == id);
-            if (employee == null)
+            HttpResponseMessage response = await client.GetAsync($"api/Employees/{id.ToString()}");
+            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode)
             {
-                return NotFound();
+                var resultString = response.Content.ReadAsStringAsync().Result;
+                e = JsonConvert.DeserializeObject<Employee>(resultString);
+                return View(e);
             }
-
-            return View(employee);
+            return View(e);
         }
 
         // GET: Employees/Create
@@ -80,27 +88,47 @@ namespace ModuleEmployeeMVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(employee);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/Employees", employee);
+                //HttpResponseMessage responseImage = await client.PostAsJsonAsync("api/Employees", employee);
+                response.EnsureSuccessStatusCode();
+                return RedirectToAction("Index", "Employees");
             }
             return View(employee);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(IFormFile file)
+        {
+            if (ModelState.IsValid)
+            {
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/UploadImage", file);
+                //HttpResponseMessage responseImage = await client.PostAsJsonAsync("api/Employees", employee);
+                response.EnsureSuccessStatusCode();
+                return RedirectToAction("Index", "Employees");
+            }
+            return View(file);
         }
 
         // GET: Employees/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Employees == null)
+            if (id == null)
             {
                 return NotFound();
             }
+            Employee e = null;
 
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee == null)
+            HttpResponseMessage response = await client.GetAsync($"api/Employees/{id.ToString()}");
+            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode)
             {
-                return NotFound();
+                var resultString = response.Content.ReadAsStringAsync().Result;
+                e = JsonConvert.DeserializeObject<Employee>(resultString);
+                return View(e);
             }
-            return View(employee);
+            return View(e);
         }
 
         // POST: Employees/Edit/5
@@ -119,8 +147,9 @@ namespace ModuleEmployeeMVC.Controllers
             {
                 try
                 {
-                    _context.Update(employee);
-                    await _context.SaveChangesAsync();
+                    HttpResponseMessage responde = await client.PutAsJsonAsync($"api/Employees/{id.ToString()}", employee);
+                    responde.EnsureSuccessStatusCode();
+                    return RedirectToAction("Index", "Employees");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -141,19 +170,21 @@ namespace ModuleEmployeeMVC.Controllers
         // GET: Employees/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Employees == null)
+            if (id == null)
             {
                 return NotFound();
             }
+            Employee e = null;
 
-            var employee = await _context.Employees
-                .FirstOrDefaultAsync(m => m.EmployeeId == id);
-            if (employee == null)
+            HttpResponseMessage response = await client.GetAsync($"api/Employees/{id.ToString()}");
+            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode)
             {
-                return NotFound();
+                var resultString = response.Content.ReadAsStringAsync().Result;
+                e = JsonConvert.DeserializeObject<Employee>(resultString);
+                return View(e);
             }
-
-            return View(employee);
+            return View(e);
         }
 
         // POST: Employees/Delete/5
@@ -165,14 +196,10 @@ namespace ModuleEmployeeMVC.Controllers
             {
                 return Problem("Entity set 'AplicationDBContext.Employees'  is null.");
             }
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee != null)
-            {
-                _context.Employees.Remove(employee);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            HttpResponseMessage responde = await client.DeleteAsync($"api/Employees/{id.ToString()}");
+            responde.EnsureSuccessStatusCode();
+            return RedirectToAction("Index", "Employees");
         }
 
         private bool EmployeeExists(int id)

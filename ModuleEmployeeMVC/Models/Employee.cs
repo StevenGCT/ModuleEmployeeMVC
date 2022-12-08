@@ -19,7 +19,7 @@ namespace ModuleEmployeeMVC.Models
         public string Type { get; set; }
 
         public string Ci { get; set; }
-
+        [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
 
         public string Photo { get; set; }
