@@ -96,12 +96,11 @@ namespace ModuleEmployeeMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EmployeeId,Name,LastName,SecondLastName,Phone,Address,Type,Ci,Birthday,Photo,Status,RegisterDate")] Employee employee)
+        public async Task<IActionResult> Create([Bind("Name,LastName,SecondLastName,Phone,Address,Type,Ci,Birthday,Photo")] Employee employee)
         {
             if (ModelState.IsValid)
             {
                 HttpResponseMessage response = await client.PostAsJsonAsync("api/Employees", employee);
-                //HttpResponseMessage responseImage = await client.PostAsJsonAsync("api/Employees", employee);
                 response.EnsureSuccessStatusCode();
                 return RedirectToAction("Index", "Employees");
             }
@@ -109,19 +108,19 @@ namespace ModuleEmployeeMVC.Controllers
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(IFormFile file)
-        {
-            if (ModelState.IsValid)
-            {
-                HttpResponseMessage response = await client.PostAsJsonAsync("api/UploadImage", file);
-                //HttpResponseMessage responseImage = await client.PostAsJsonAsync("api/Employees", employee);
-                response.EnsureSuccessStatusCode();
-                return RedirectToAction("Index", "Employees");
-            }
-            return View(file);
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Create(IFormFile file)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        HttpResponseMessage response = await client.PostAsJsonAsync("api/UploadImage", file);
+        //        //HttpResponseMessage responseImage = await client.PostAsJsonAsync("api/Employees", employee);
+        //        response.EnsureSuccessStatusCode();
+        //        return RedirectToAction("Index", "Employees");
+        //    }
+        //    return View(file);
+        //}
 
         // GET: Employees/Edit/5
         public async Task<IActionResult> Edit(int? id)
