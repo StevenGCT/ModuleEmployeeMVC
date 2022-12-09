@@ -21,5 +21,7 @@ namespace ModuleEmployeeMVC.Context
         public virtual DbSet<Event> Events { get; set; }
 
         public virtual DbSet<Schedule> Schedules { get; set; }
+        public virtual DbSet<PresenceWork> PresenceWorks { get; set; }
+
     }
 }

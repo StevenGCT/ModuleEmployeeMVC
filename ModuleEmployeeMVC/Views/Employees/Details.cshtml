@@ -70,3 +70,29 @@
     <a asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
+
+<h1>Presence to work</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date Attendance
+            </th>
+            <th>
+                Status
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.PresenceWorks)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateAttenddance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+            </tr>
+        }
+    </tbody>
