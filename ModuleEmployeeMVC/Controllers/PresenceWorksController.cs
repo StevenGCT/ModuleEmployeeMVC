@@ -12,13 +12,14 @@ using Newtonsoft.Json;
 
 namespace ModuleEmployeeMVC.Controllers
 {
-    public class EventsController : Controller
+    public class PresenceWorksController : Controller
     {
         private readonly AplicationDBContext _context;
 
+        //CONSUMING SERVICES
         static HttpClient client = new HttpClient();
 
-        public EventsController(AplicationDBContext context)
+        public PresenceWorksController(AplicationDBContext context)
         {
             if (client.BaseAddress == null)
             {
@@ -29,16 +30,16 @@ namespace ModuleEmployeeMVC.Controllers
 
             _context = context;
         }
-        // GET: Events
+        // GET: PresenceWorks
         public async Task<IActionResult> Index()
         {
-            List<Event> list = null;
+            List<PresenceWork> list = null;
 
-            HttpResponseMessage response = await client.GetAsync("api/Events");
+            HttpResponseMessage response = await client.GetAsync("api/PresenceWorks");
             if (response.IsSuccessStatusCode)
             {
                 var resultString = response.Content.ReadAsStringAsync().Result;
-                list = JsonConvert.DeserializeObject<List<Event>>(resultString);
+                list = JsonConvert.DeserializeObject<List<PresenceWork>>(resultString);
                 client.DefaultRequestHeaders.Clear();
                 return View(list.ToList());
             }
@@ -46,77 +47,76 @@ namespace ModuleEmployeeMVC.Controllers
             return View(list.ToList());
         }
 
-        // GET: Events/Details/5
+        // GET: PresenceWorks/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (id == null || _context.PresenceWorks == null)
             {
-                if (id == null || _context.Events == null)
-                {
-                    return NotFound();
-                }
-                Event p = null;
+                return NotFound();
+            }
+            PresenceWork p = null;
 
-                HttpResponseMessage response = await client.GetAsync($"api/Events/{id.ToString()}");
-                response.EnsureSuccessStatusCode();
-                if (response.IsSuccessStatusCode)
-                {
-                    var resultString = response.Content.ReadAsStringAsync().Result;
-                    p = JsonConvert.DeserializeObject<Event>(resultString);
-                    return View(p);
-                }
+            HttpResponseMessage response = await client.GetAsync($"api/PresenceWorks/{id.ToString()}");
+            response.EnsureSuccessStatusCode();
+            if (response.IsSuccessStatusCode)
+            {
+                var resultString = response.Content.ReadAsStringAsync().Result;
+                p = JsonConvert.DeserializeObject<PresenceWork>(resultString);
                 return View(p);
             }
+            return View(p);
         }
-        // GET: Events/Create
+
+        // GET: PresenceWorks/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Events/Create
+        // POST: PresenceWorks/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EventId,AddressEvent,NameEvent,DateEvent,Status,RegisterDate")] Event @event)
+        public async Task<IActionResult> Create([Bind("Id,DateAttenddance,StatusAttendance,EmployeeId")] PresenceWork presenceWork)
         {
             if (ModelState.IsValid)
             {
-                HttpResponseMessage response = await client.PostAsJsonAsync("api/Events", @event);
+                HttpResponseMessage response = await client.PostAsJsonAsync("api/PresenceWorks", presenceWork);
                 response.EnsureSuccessStatusCode();
-                return RedirectToAction("Index", "Events");
+                return RedirectToAction("Index", "PresenceWorks");
             }
-            return View(@event);
+            return View(presenceWork);
         }
 
-        // GET: Events/Edit/5
+        // GET: PresenceWorks/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            Event e = null;
+            PresenceWork e = null;
 
-            HttpResponseMessage response = await client.GetAsync($"api/Events/{id.ToString()}");
+            HttpResponseMessage response = await client.GetAsync($"api/PresenceWorks/{id.ToString()}");
             response.EnsureSuccessStatusCode();
             if (response.IsSuccessStatusCode)
             {
                 var resultString = response.Content.ReadAsStringAsync().Result;
-                e = JsonConvert.DeserializeObject<Event>(resultString);
+                e = JsonConvert.DeserializeObject<PresenceWork>(resultString);
                 return View(e);
             }
             return View(e);
         }
 
-        // POST: Events/Edit/5
+        // POST: PresenceWorks/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EventId,AddressEvent,NameEvent,DateEvent,Status,RegisterDate")] Event @event)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,DateAttenddance,StatusAttendance,EmployeeId")] PresenceWork presenceWork)
         {
-            if (id != @event.EventId)
+            if (id != presenceWork.Id)
             {
                 return NotFound();
             }
@@ -125,13 +125,13 @@ namespace ModuleEmployeeMVC.Controllers
             {
                 try
                 {
-                    HttpResponseMessage responde = await client.PutAsJsonAsync($"api/Events/{id.ToString()}", @event);
+                    HttpResponseMessage responde = await client.PutAsJsonAsync($"api/PresenceWorks/{id.ToString()}", presenceWork);
                     responde.EnsureSuccessStatusCode();
-                    return RedirectToAction("Index", "Events");
+                    return RedirectToAction("Index", "PresenceWorks");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EventExists(@event.EventId))
+                    if (!PresenceWorkExists(presenceWork.Id))
                     {
                         return NotFound();
                     }
@@ -142,47 +142,47 @@ namespace ModuleEmployeeMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(@event);
+            return View(presenceWork);
         }
 
-        // GET: Events/Delete/5
+        // GET: PresenceWorks/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            Event e = null;
+            PresenceWork e = null;
 
-            HttpResponseMessage response = await client.GetAsync($"api/Events/{id.ToString()}");
+            HttpResponseMessage response = await client.GetAsync($"api/PresenceWorks/{id.ToString()}");
             response.EnsureSuccessStatusCode();
             if (response.IsSuccessStatusCode)
             {
                 var resultString = response.Content.ReadAsStringAsync().Result;
-                e = JsonConvert.DeserializeObject<Event>(resultString);
+                e = JsonConvert.DeserializeObject<PresenceWork>(resultString);
                 return View(e);
             }
             return View(e);
         }
 
-        // POST: Events/Delete/5
+        // POST: PresenceWorks/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Events == null)
+            if (_context.PresenceWorks == null)
             {
-                return Problem("Entity set 'AplicationDBContext.Events'  is null.");
+                return Problem("Entity set 'AplicationDBContext.PresenceWorks'  is null.");
             }
 
-            HttpResponseMessage responde = await client.DeleteAsync($"api/Events/{id.ToString()}");
+            HttpResponseMessage responde = await client.DeleteAsync($"api/PresenceWorks/{id.ToString()}");
             responde.EnsureSuccessStatusCode();
-            return RedirectToAction("Index", "Events");
+            return RedirectToAction("Index", "PresenceWorks");
         }
 
-        private bool EventExists(int id)
+        private bool PresenceWorkExists(int id)
         {
-          return _context.Events.Any(e => e.EventId == id);
+          return _context.PresenceWorks.Any(e => e.Id == id);
         }
     }
 }
