@@ -15,7 +15,6 @@ namespace ModuleEmployeeMVC.Controllers
     public class EmployeesController : Controller
     {
         private readonly AplicationDBContext _context;
-        //CONSUMING SERVICES
         static HttpClient client = new HttpClient();
 
         public EmployeesController(AplicationDBContext context)
