@@ -9,6 +9,7 @@ namespace ModuleEmployeeMVC.Models
         public string AddressEvent { get; set; }
 
         public string NameEvent { get; set; }
+        [DataType(DataType.Date)]
         public DateTime DateEvent { get; set; } = DateTime.Now;
 
         public char Status { get; set; } = '1';

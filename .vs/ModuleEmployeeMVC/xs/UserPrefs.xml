@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{EDCF8941-D267-49F8-9D31-AFBCB43BF3FF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ModuleEmployeeMVC/Controllers/EmployeesController.cs">
+    <Files>
+      <File FileName="ModuleEmployeeMVC/Controllers/EmployeesController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ModuleEmployeeMVC" expanded="True">
+            <Node name="ModuleEmployeeMVC" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="EmployeesController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ModuleEmployeeMVC PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+</Properties>
