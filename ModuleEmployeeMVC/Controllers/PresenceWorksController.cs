@@ -16,7 +16,6 @@ namespace ModuleEmployeeMVC.Controllers
     {
         private readonly AplicationDBContext _context;
 
-        //CONSUMING SERVICES
         static HttpClient client = new HttpClient();
 
         public PresenceWorksController(AplicationDBContext context)
